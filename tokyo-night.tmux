@@ -63,5 +63,5 @@ tmux set -g window-status-current-format "$RESET#[fg=${THEME[green]},bg=${THEME[
 tmux set -g window-status-format "$RESET#[fg=${THEME[foreground]}] #{?#{==:#{pane_current_command},ssh},󰣀 , }${RESET}$window_number#W#[nobold,dim]#{?window_zoomed_flag, $zoom_number, $custom_pane}#[fg=${THEME[yellow]}]#{?window_last_flag,󰁯  , }"
 
 #+--- Bars RIGHT ---+
-tmux set -g status-right "$current_path$cmus_status$git_status$wb_git_status"
+tmux set -g status-right "$current_path"
 tmux set -g window-status-separator ""
